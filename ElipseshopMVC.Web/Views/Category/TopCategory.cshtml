@@ -1,0 +1,26 @@
+﻿@model TopCategoryViewModel
+@{
+    Layout = "~/Views/Shared/_LayoutLeftNav.cshtml";
+}
+
+<h2>@Model.Name</h2>
+
+@{ViewBag.UlNavClass = "nav nav-pills nav-stacked";}
+@section Aside {
+    @Html.Partial("_LeftNavigation", Model.StarttingNode)
+}
+
+<div>
+    <div>
+        <img src="~/Images/Layout/Categories/@Model.MainPicture.Url" alt="Product image" class="category-img-main" />
+    </div>
+    <div class="row">
+        @foreach (CategoryPictureViewModel picture in Model.CategoryPictures)
+        {
+            if (!picture.IsMain)
+            {
+                <img src="~/Images/Layout/Categories/@picture.Url" alt="Product image" class="col-md-3" />
+            }
+        }
+    </div>
+</div>

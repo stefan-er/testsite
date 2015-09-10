@@ -1,0 +1,16 @@
+D:\Dropbox\IT\Sites\ElipseshopMVC\ElipseshopMVC.Models\bin\Release\ElipseshopMVC.Models.dll.config
+D:\Dropbox\IT\Sites\ElipseshopMVC\ElipseshopMVC.Models\bin\Release\ElipseshopMVC.Models.dll
+D:\Dropbox\IT\Sites\ElipseshopMVC\ElipseshopMVC.Models\bin\Release\ElipseshopMVC.Models.pdb
+D:\Dropbox\IT\Sites\ElipseshopMVC\ElipseshopMVC.Models\bin\Release\EntityFramework.dll
+D:\Dropbox\IT\Sites\ElipseshopMVC\ElipseshopMVC.Models\bin\Release\EntityFramework.SqlServer.dll
+D:\Dropbox\IT\Sites\ElipseshopMVC\ElipseshopMVC.Models\bin\Release\Microsoft.AspNet.Identity.Core.dll
+D:\Dropbox\IT\Sites\ElipseshopMVC\ElipseshopMVC.Models\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Dropbox\IT\Sites\ElipseshopMVC\ElipseshopMVC.Models\bin\Release\EntityFramework.xml
+D:\Dropbox\IT\Sites\ElipseshopMVC\ElipseshopMVC.Models\bin\Release\EntityFramework.SqlServer.xml
+D:\Dropbox\IT\Sites\ElipseshopMVC\ElipseshopMVC.Models\bin\Release\Microsoft.AspNet.Identity.Core.xml
+D:\Dropbox\IT\Sites\ElipseshopMVC\ElipseshopMVC.Models\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Dropbox\IT\Sites\ElipseshopMVC\ElipseshopMVC.Models\obj\Release\ElipseshopMVC.Models.dll
+D:\Dropbox\IT\Sites\ElipseshopMVC\ElipseshopMVC.Models\obj\Release\ElipseshopMVC.Models.pdb
+D:\Dropbox\IT\Sites\ElipseshopMVC\ElipseshopMVC.Models\obj\Release\ElipseshopMVC.Models.csprojResolveAssemblyReference.cache
+D:\Dropbox\IT\Sites\ElipseshopMVC\ElipseshopMVC.Models\bin\Release\ElipseshopMVC.Common.dll
+D:\Dropbox\IT\Sites\ElipseshopMVC\ElipseshopMVC.Models\bin\Release\ElipseshopMVC.Common.pdb

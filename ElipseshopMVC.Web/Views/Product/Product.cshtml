@@ -1,0 +1,115 @@
+﻿@model ProductViewModel
+@{
+    Layout = "~/Views/Shared/_LayoutLeftNav.cshtml";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@{ViewBag.UlNavClass = "nav nav-pills nav-stacked";}
+@section Aside {
+    @Html.Partial("_LeftNavigation", Model.StarttingNode)
+}
+
+<div class="product-page-wrapper row">
+    <!--BEGIN Images-->
+    <div class="col-md-6">
+        <div>
+            <img src="~/Images/Products/@Model.MainPicture.Url" alt="@Model.Title" id="imgMainPicture" class="img-responsive img-thumbnail" />
+        </div>
+        <div class="product-gallery">
+            <div class="row">
+                @{int picturesCount = 0;}
+                @foreach (ProductPictureViewModel picture in Model.ProductPictures)
+                {
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <img src="~/Images/Products/@picture.Url" alt="@Model.Title" class="product-gallery-image img-responsive img-thumbnail" />
+                    </div>
+                    
+                    picturesCount++;
+                    
+                    if (picturesCount > 1 && picturesCount % 4 == 0)
+                    {
+                        @:</div>
+                        @:<div class="row">
+                    }
+                }
+            </div>
+        </div>
+    </div>
+    <!--END Images-->
+    <!--BEGIN Description-->
+    <div class="col-md-6">
+        @if (TempData["Success"] != null)
+        {
+            <div class="bg-success">@TempData["Success"]</div>
+        }
+
+        <h3>
+            @Model.Title
+        </h3>
+        <div>
+            @Html.Raw(Model.Description)
+        </div>
+
+        @if (Model.NewPrice > 0)
+        {
+            <div><s>Price: @Model.Price lv.</s></div>
+            <div class="prod-intro-new-price">New price: @Model.NewPrice lv.</div>
+        }
+        else
+        {
+            <div>Price: @Model.Price lv.</div>
+        }
+
+        <br/>
+        
+        @if (Model.ProductColors != null)
+        {
+            <div>
+                <label for="ProductColor" class="control-label">Product color:</label>
+                @Html.DropDownList("ProductColor", Model.ProductColors, new { @class = "btn btn-default dropdown-toggle" })
+            </div>
+        }
+
+        @if (Model.ProductSizes != null)
+        {
+            <div>
+                <label for="ProductSize" class="control-label">Product size:</label>
+                @Html.DropDownList("ProductSize", Model.ProductSizes, new { @class = "btn btn-default dropdown-toggle" })
+            </div>
+        }
+
+        @using (Html.BeginForm("Product", "Product", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+            <div>
+                <label for="ProductQuantity" class="control-label">Product quantity:</label>
+                @Html.DropDownList("ProductQuantity", Model.ProductQuantities, new { @class = "btn btn-default dropdown-toggle" })
+                @Html.ValidationMessageFor(model => model.ProductQuantities, "ProductQuantity should be a number greater than 0", new { @class = "text-danger" })
+                @Html.Hidden("PCSQuantityID", Model.SelectedPCSQuantityID)
+            </div>
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <input type="submit" name="Add" value="Add" class="btn btn-default" />
+        }
+    </div>
+    <!--END Description-->
+</div>
+
+@section scripts {
+    @*TODO:Create validation*@
+    @*@Scripts.Render("~/bundles/jqueryval")*@
+    @Scripts.Render("~/bundles/Product")
+    <script type="text/javascript">
+        var productID = @Model.ID;
+        var urlSizes = '@Url.Action("GetSizes")';
+        var urlQuantities = '@Url.Action("GetQuantities")';
+
+        $(document).ready(function () {
+            $(".product-gallery-image").mouseover(ChangeMainPicture);
+            $("#ProductColor").change({ urlSizes: urlSizes, urlQuantites: urlQuantities, productID: productID}, UpdateColors);
+            $("#ProductSize").change({urlQuantites: urlQuantities, productID: productID}, UpdateSizes);
+            SetProductColorBackgrounds();
+        });
+    </script>
+}

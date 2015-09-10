@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElipseshopMVC.Web", "ElipseshopMVC.Web\ElipseshopMVC.Web.csproj", "{397A294F-2EB2-45EE-835A-109512C2EA6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElipseshopMVC.Models", "ElipseshopMVC.Models\ElipseshopMVC.Models.csproj", "{E49EC084-46DE-4844-B8DB-0B26BD2FC336}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElipseshopMVC.Data", "ElipseshopMVC.Data\ElipseshopMVC.Data.csproj", "{0D0AE0E8-3ABE-4309-9D45-F7F58803FA91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElipseshopMVC.Common", "ElipseshopMVC.Common\ElipseshopMVC.Common.csproj", "{A27B9155-5A1A-4C3B-A806-5E212BBEE3AA}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://stefanermenkov.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ElipseshopMVC.Web\\ElipseshopMVC.Web.csproj
+		SccProjectName1 = ElipseshopMVC.Web
+		SccLocalPath1 = ElipseshopMVC.Web
+		SccProjectUniqueName2 = ElipseshopMVC.Models\\ElipseshopMVC.Models.csproj
+		SccProjectName2 = ElipseshopMVC.Models
+		SccLocalPath2 = ElipseshopMVC.Models
+		SccProjectUniqueName3 = ElipseshopMVC.Data\\ElipseshopMVC.Data.csproj
+		SccProjectName3 = ElipseshopMVC.Data
+		SccLocalPath3 = ElipseshopMVC.Data
+		SccProjectUniqueName4 = ElipseshopMVC.Common\\ElipseshopMVC.Common.csproj
+		SccProjectName4 = ElipseshopMVC.Common
+		SccLocalPath4 = ElipseshopMVC.Common
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{397A294F-2EB2-45EE-835A-109512C2EA6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{397A294F-2EB2-45EE-835A-109512C2EA6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{397A294F-2EB2-45EE-835A-109512C2EA6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{397A294F-2EB2-45EE-835A-109512C2EA6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E49EC084-46DE-4844-B8DB-0B26BD2FC336}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E49EC084-46DE-4844-B8DB-0B26BD2FC336}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E49EC084-46DE-4844-B8DB-0B26BD2FC336}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E49EC084-46DE-4844-B8DB-0B26BD2FC336}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D0AE0E8-3ABE-4309-9D45-F7F58803FA91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D0AE0E8-3ABE-4309-9D45-F7F58803FA91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D0AE0E8-3ABE-4309-9D45-F7F58803FA91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D0AE0E8-3ABE-4309-9D45-F7F58803FA91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A27B9155-5A1A-4C3B-A806-5E212BBEE3AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A27B9155-5A1A-4C3B-A806-5E212BBEE3AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A27B9155-5A1A-4C3B-A806-5E212BBEE3AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A27B9155-5A1A-4C3B-A806-5E212BBEE3AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

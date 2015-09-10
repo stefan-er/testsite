@@ -1,0 +1,39 @@
+﻿@model SubCategoryViewModel
+
+@{
+    Layout = "~/Views/Shared/_LayoutLeftNav.cshtml";
+}
+
+<h2>@Model.Name</h2>
+
+@{ViewBag.UlNavClass = "nav nav-pills nav-stacked";}
+@section Aside {
+    @Html.Partial("_LeftNavigation", Model.StarttingNode)
+}
+
+<div class="subcat-gallery">
+    <div class="row">
+        @foreach (var product in Model.Products)
+        {
+            <div class="col-md-3 col-sm-4 col-xs-6">
+                <a href="/Product/@product.ID/@product.Title">
+                    <img src="~/Images/Products/@product.MainPicture.Url" alt="@product.Title" class="img-thumbnail img-responsive" />
+                </a>
+                <aside>
+                    <p>
+                        <a href="/Product/@product.ID/@product.Title">@product.Title</a>
+                    </p>
+                    @if (product.NewPrice > 0)
+                    {
+                        <div><s>@product.Price лв</s></div>
+                        <div class="prod-intro-new-price">@product.NewPrice лв</div>
+                    }
+                    else
+                    {
+                        <div>@product.Price лв</div>
+                    }
+                </aside>
+            </div>
+        }
+    </div>
+</div>

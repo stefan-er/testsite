@@ -1,0 +1,10 @@
+D:\Dropbox\IT\Sites\ElipseshopMVC\ElipseshopMVC.Common\bin\Release\ElipseshopMVC.Common.dll
+D:\Dropbox\IT\Sites\ElipseshopMVC\ElipseshopMVC.Common\bin\Release\ElipseshopMVC.Common.pdb
+D:\Dropbox\IT\Sites\ElipseshopMVC\ElipseshopMVC.Common\obj\Release\ElipseshopMVC.Common.dll
+D:\Dropbox\IT\Sites\ElipseshopMVC\ElipseshopMVC.Common\obj\Release\ElipseshopMVC.Common.pdb
+D:\Dropbox\IT\Sites\ElipseshopMVC\ElipseshopMVC.Common\bin\Release\ElipseshopMVC.Common.dll.config
+D:\Dropbox\IT\Sites\ElipseshopMVC\ElipseshopMVC.Common\bin\Release\EntityFramework.dll
+D:\Dropbox\IT\Sites\ElipseshopMVC\ElipseshopMVC.Common\bin\Release\EntityFramework.SqlServer.dll
+D:\Dropbox\IT\Sites\ElipseshopMVC\ElipseshopMVC.Common\bin\Release\EntityFramework.xml
+D:\Dropbox\IT\Sites\ElipseshopMVC\ElipseshopMVC.Common\bin\Release\EntityFramework.SqlServer.xml
+D:\Dropbox\IT\Sites\ElipseshopMVC\ElipseshopMVC.Common\obj\Release\ElipseshopMVC.Common.csprojResolveAssemblyReference.cache

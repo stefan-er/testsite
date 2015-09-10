@@ -1,0 +1,25 @@
+﻿@model SiteMapNode
+
+<ul class="@ViewBag.UlNavClass">
+    @foreach (SiteMapNode node in Model.ChildNodes)
+    {
+        if (node.Key == ViewBag.CurrentNodeKey)
+        {
+            ViewBag.Active = "active";
+        }
+        else
+        {
+            ViewBag.Active = null;
+        }
+
+        <li class="@ViewBag.Active">
+            <a href="@node.Url">@node.Title</a>
+
+            @if (node.HasChildNodes)
+            {
+                ViewBag.UlNavClass = "nav nav-pills nav-stacked inner";
+                @Html.Partial("_LeftNavigation", node)
+            }
+        </li>
+    }
+</ul>

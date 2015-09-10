@@ -1,0 +1,38 @@
+﻿@model IEnumerable<ShoppingBagItemViewModel>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ShoppingBag</h2>
+<hr />
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+
+    <table>
+        @foreach (ShoppingBagItemViewModel shoppingBagItem in Model)
+        {
+            <tr>
+                <td>
+                    @Html.CheckBox("Ordered", true)
+                    @Html.Hidden("ID", shoppingBagItem.ID)
+                </td>
+                <td>
+                    <img src="~/Images/Products/@shoppingBagItem.ProductPictureUrl" alt="@shoppingBagItem.ProductTitle" />
+                </td>
+                <td>
+                    <span>@shoppingBagItem.ProductTitle</span>
+                </td>
+                <td>
+                    <span>@shoppingBagItem.ProductColor.Name</span>
+                </td>
+                <td>
+                    <span>@shoppingBagItem.ProductSize.Name</span>
+                </td>
+                <td>
+                    <span>@shoppingBagItem.Quantity</span>
+                </td>
+            </tr>
+        }
+    </table>
+}
