@@ -18,7 +18,7 @@
         {
             ViewEnginesConfiguration.RegisterViewEngines(ViewEngines.Engines);
             //Uncoment that when you want to create new DataBase with seed
-            Database.SetInitializer(new MigrateDatabaseToLatestVersion<ElipseshopDbContext, Configuration>());
+            //Database.SetInitializer(new MigrateDatabaseToLatestVersion<ElipseshopDbContext, Configuration>());
             AutoMapperConfig.Execute();
 
             AreaRegistration.RegisterAllAreas();
